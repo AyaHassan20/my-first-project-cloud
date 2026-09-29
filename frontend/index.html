@@ -1,0 +1,48 @@
+!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial
+scale=1.0"> 
+    <title>Cloud Issue Tracker</title> 
+    <link rel="stylesheet" href="css/style.css"> 
+</head> 
+<body> 
+<header class="app-header"> 
+    <h1>Cloud Issue Tracker 
+    <p>Report and track simple technical issues.</p> 
+</header> 
+ 
+<main class="container"> 
+    <section class="panel"> 
+        <h2>Create Issue</h2> 
+        <form id="issue-form"> 
+            <label for="title">Title</label> 
+            <input id="title" name="title" type="text"> 
+ 
+            <label for="description">Description</label> 
+            <textarea id="description" name="description"></textarea> 
+ 
+            <label for="priority">Priority</label> 
+            <select id="priority" name="priority"> 
+                <option>Low</option> 
+                <option selected>Medium</option> 
+                <option>High</option> 
+            </select> 
+ 
+            <button type="submit">Submit Issue</button> 
+        </form> 
+    </section> 
+ 
+    <section class="panel"> 
+        <h2>Current Issues</h2> 
+        <article class="issue-card"> 
+            <h3>Unable to access Wi-Fi</h3> 
+            <p>Connection fails in the teaching lab.</p> 
+            <p><strong>Priority:</strong> High</p> 
+            <p><strong>Status:</strong> Open</p> 
+        </article> 
+    </section> 
+</main> 
+ 
+<script src="js/app.js"></script> 
