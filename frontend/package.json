@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "start": "http-server . -p 8080"
+    "start": "node ../Backend/server.js"
   }
 }

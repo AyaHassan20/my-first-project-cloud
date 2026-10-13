@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ISS-101",
+    "title": "Unable to access Wi-Fi",
+    "description": "Connection fails in the teaching lab.",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-09-01T09:00:00.000Z"
+  },
+  {
+    "id": "691597e4-42e3-403b-ab70-79dd9f8e50b1",
+    "title": "Lab 3 UI acceptance",
+    "description": "Check issue creation and persisted status.",
+    "priority": "High",
+    "status": "Resolved",
+    "createdAt": "2026-10-13T07:53:48.973Z"
+  },
+  {
+    "id": "1367eda6-b858-40d2-99d1-8f64b57a614f",
+    "title": "Server owned fields",
+    "description": "These fields must be server controlled.",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-10-13T07:53:56.601Z"
+  }
+]

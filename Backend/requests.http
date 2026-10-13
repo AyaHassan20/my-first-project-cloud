@@ -1,0 +1,40 @@
+@baseUrl = http://localhost:8080
+
+### View all issues
+GET {{baseUrl}}/api/issues
+
+### Create an issue
+POST {{baseUrl}}/api/issues
+Content-Type: application/json
+
+{
+  "title": "Projector not detected",
+  "description": "Laptop cannot detect the classroom projector.",
+  "priority": "Medium"
+}
+
+### Reject a title that is too short
+POST {{baseUrl}}/api/issues
+Content-Type: application/json
+
+{
+  "title": "Hi",
+  "description": "Laptop cannot detect the classroom projector.",
+  "priority": "Medium"
+}
+
+### Change an issue status
+PATCH {{baseUrl}}/api/issues/ISS-101/status
+Content-Type: application/json
+
+{
+  "status": "Resolved"
+}
+
+### Return an issue-not-found error
+PATCH {{baseUrl}}/api/issues/ISS-999/status
+Content-Type: application/json
+
+{
+  "status": "Resolved"
+}

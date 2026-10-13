@@ -21,10 +21,27 @@ scale=1.0"
         <h2>Create Issue</h2>
         <form id="issue-form">
           <label for="title">Title</label>
-          <input id="title" name="title" type="text" required />
+          <input
+            id="title"
+            name="title"
+            type="text"
+            minlength="3"
+            maxlength="100"
+            aria-describedby="title-error"
+            required
+          />
+          <p id="title-error" class="field-error" aria-live="polite"></p>
 
           <label for="description">Description</label>
-          <textarea id="description" name="description" required></textarea>
+          <textarea
+            id="description"
+            name="description"
+            minlength="5"
+            maxlength="500"
+            aria-describedby="description-error"
+            required
+          ></textarea>
+          <p id="description-error" class="field-error" aria-live="polite"></p>
 
           <label for="priority">Priority</label>
           <select id="priority" name="priority" required>
@@ -32,6 +49,7 @@ scale=1.0"
             <option selected>Medium</option>
             <option>High</option>
           </select>
+          <p id="priority-error" class="field-error" aria-live="polite"></p>
 
           <button type="submit">Submit Issue</button>
         </form>
